@@ -1,0 +1,527 @@
+<!-- HTML Practice Markup with https://www.cdc.gov/vaccines/schedules/hcp/imz/adult.html -->
+
+<!doctype html>
+<html>
+
+<head>
+	<title>Adult Immunization Schedule by Vaccine and Age Group | CDC</title>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header id="top"></header>
+
+	<h1><strong>Table 1.</strong> Recommended Adult Immunization Schedule for ages 19 years or older, United States, 2019</h1>
+
+	<p><strong>Always make recommendations by determining needed vaccines based on age (<a href="#table-age" title="Vaccines By Age">Table 1</a>), assessing for medical conditions and other indications (<a href="https://www.cdc.gov/vaccines/schedules/hcp/imz/adult-conditions.html" title="Vaccines by Conditions">Table 2</a>), and reviewing special situations (<a href="notes">Notes</a>).</strong></p>
+
+	<nav id="navSchedules">
+		<ul>
+			<li>Table 1. By age</li>
+			<li>Table 2. By indications</li>
+			<li>Changes to this year's schedule</li>
+			<li>Resources for health care providers</li>
+			<li>Resources for adults</li>
+			<li>Download schedules app</li>
+		</ul>
+	</nav>
+
+	<div id="printable">
+		<ul>
+			<li><a href="https://www.cdc.gov/vaccines/schedules/downloads/adult/adult-combined-schedule.pdf">8.5″x11″ print color Cdc-pdf [6 pages]</a></li>
+			<li><a href="https://www.cdc.gov/vaccines/schedules/downloads/adult/adult-combined-schedule-bw.pdf">8.5″x11″ print black and white Cdc-pdf [6 pages]</a></li>
+			<li><a href="https://www.cdc.gov/vaccines/schedules/hcp/imz/adult-compliant.html">Compliant version of this schedule</a></li>
+			<li><a href="#vacc-adult">Vaccines in the Adult Immunization Schedule</a></li>
+			<li><a href="https://www.cdc.gov/vaccines/schedules/resource-library/syndicate.html">Learn how to display current schedules from your website.</a></li>
+			<li>Hard copies of the schedules are available for ordering using the <a href="https://wwwn.cdc.gov/pubs/CDCInfoOnDemand.aspx?ProgramID=84">CDC-INFO On Demand ordering form</a></li>
+		</ul>
+	</div>
+
+	<section id="vaccTable">
+		<h4>Legend</h4>
+		<table>
+			<tr>
+				<td id="yellow">Recommended vaccination for adults who meet age requirement, lack documentation of vaccination, or lack evidence of past infection</td>
+				<td id="purple">Recommended vaccination for adults with an additional risk factor or another indication</td>
+				<td id="gray">No recommendation</td>
+			</tr>
+		</table>
+
+		<table id="table-age">
+			<tr>
+				<th>Vaccine</th>
+				<th>19-21 years</th>
+				<th>22-26 years</th>
+				<th>27-49 years</th>
+				<th>50-64 years</th>
+				<th>&ge; 65 years</th>
+			</tr>
+			<tr>
+				<th><a href=#note-flu>Influenza activated</a> (IIV) or <a href="#note-flu">Influenza recombinant</a> (RIV)</th>
+				<td colspan="5">1 dose annually</td>
+			</tr>
+			<tr>
+				<th><a href="note-flu">Influenza live attenuated</a><br />
+				(LAIV)</th>
+				<td colspan="3">1 dose annually</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th><a href="#note-tdap">Tetanus, diphtheria, pertussis</a><br />
+				(Tdap or Td)</th>
+				<td colspan="5">1 dose Tdap, then Td booster every 10 yrs</td>
+			</tr>
+			<tr>
+				<th><a href="#note-mmr">Measels, mumps, rubella</a><br />
+				(MMR)</th>
+				<td colspan="4">1 or 2 doses depending on indication (if born in 1957 or later)</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th><a href="#note-varicella">Varicella</a><br />
+				(VAR)</th>
+				<td colspan="3">2 doses (if born in 1980 or later)</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th><a href="#note-zoster">Zoster recombinant</a><br />
+				(RZV)(preferred)</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td colspan="2">2 doses</td>
+			</tr>
+			<tr>
+				<th><a href="#note-zoster">Zoster live</a><br />
+				(ZVL)</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td colspan="2">1 doses</td>
+			</tr>
+			<tr>
+				<th><a href="#note-hpv">Human Papillomavirus</a><br />
+					(HPV)<br />
+				Female</th>
+				<td colspan="2">2 or 3 doses depending on age at initial vaccination</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th><a href="#note-hpv">Human Papillomavirus</a><br />
+					(HPV)<br />
+				Male</th>
+				<td colspan="2">2 or 3 doses depending on age at initial vaccination</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th><a href=#note-pneumo>Pneumococcal conjugate</a><br />
+				(PCV13)</th>
+				<td colspan="5">1 dose</td>
+			</tr>	
+			<tr>
+				<th><a href=#note-pneumo>Pneumococcal polysaccharide</a><br />
+				(PPSV23)</th>
+				<td colspan="4">1 or 2 doses depending on indication</td>
+				<td>1 dose</td>
+			</tr>
+			<tr>
+				<th><a href=#note-hepa>Hepatitis A</a><br />
+				(HepA)</th>
+				<td colspan="5">2 or 3 doses depending on vaccine</td>
+			</tr>
+			<tr>
+				<th><a href=#note-hepb>Hepatitis B</a><br />
+				(HepB)</th>
+				<td colspan="5">2 or 3 doses depending on vaccine</td>
+			</tr>
+			<tr>
+				<th><a href=#note-mening>Meningococcal A, C, W, Y</a><br />
+				(MenACWY)</th>
+				<td colspan="5">1 or 2 doses depending on indication, then booster every 5 yrs if risk remains</td>
+			</tr>
+			<tr>
+				<th><a href=#note-mening>Meningococcal B</a><br />
+				(MenB)</th>
+				<td colspan="5">2 or 3 doses depending on vaccine and indication</td>
+			</tr>
+			<tr>
+				<th><a href=#note-hib><em>Haemophilus influenzae type b</em></a><br />
+				(Hib)</th>
+				<td colspan="5">1 or 3 doses depending on indication</td>
+			</tr>
+
+		</table>
+	</section>
+
+	<p><a href="#top">Top of Page</a></p>
+
+	<aside>
+		Administer recommended vaccines if vaccination history is incomplete or unknown. Do not restart or add doses to vaccine series for extended intervals between doses. The use of trade names is for identification purposes only and does not imply endorsement by the <abbr title="Advisory Committee on Immunization Practices">ACIP</abbr> or <abbr title="Centers for Disease Control and Prevention">CDC</abbr>.
+	</aside>
+
+	<section id="notes">
+		<h2>Notes</h2>
+
+		<h3>Recommended Adult Immunization Schedule for ages 19 years or older, United States, 2019</h3>
+
+		<p>For vaccine recommendations for persons age 0 through 18 years, see the <a href="https://www.cdc.gov/vaccines/schedules/hcp/imz/child-adolescent.html">Child and Adolescent Immunization Schedule.</a></p>
+
+		<article id="note-flu">
+			<h3><em>Haemophilus influenzae</em> type b vaccination</h3>
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Anatomical or functional asplenia (including sickle cell disease)</strong>: 1 dose Hib if previously did not receive Hib; if elective splenectomy, 1 dose Hib, preferably at least 14 days before splenectomy</li>
+				<li><strong>Hematopoietic stem cell transplant (HSCT)</strong>: 3-dose series Hib 4 weeks apart starting 6–12 months after successful transplant, regardless of Hib vaccination history</li>
+
+
+			</ul>
+		</article>
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-hepa">
+			<h3>Hepatitis A vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul><li><strong>Not at risk but want protection from hepatitis A</strong> (identification of risk factor not required): 2-dose series HepA (Havrix 6–12 months apart or Vaqta 6–18 months apart [minimum interval: 6 months]) or 3-dose series HepA-HepB (Twinrix at 0, 1, 6 months [minimum intervals: 4 weeks between doses 1 and 2, 5 months between doses 2 and 3])</li></ul>
+
+			<h4>Special Situations</h4>
+			<ul>
+				<li>
+					<strong>At risk for hepatitis A virus infection</strong>: 2-dose series HepA as above<br />
+					<ul>
+						<li><strong>Chronic liver disease</strong></li>
+						<li><strong>Clotting factor disorders</strong></li>
+						<li><strong>Men who have sex with men</strong></li>
+						<li><strong>Injection or non-injection drug use</strong></li>
+						<li><strong>Homelessness</strong></li>
+						<li><strong>Work with hepatitis A virus</strong> in research laboratory or nonhuman primates with hepatitis A virus infection</li>
+						<li><strong>Travel in countries with high or intermediate endemic hepatitis A</strong></li>
+						<li><strong>Close personal contact with international adoptee</strong> (e.g., household, regular babysitting) in first 60 days after arrival from country with high or intermediate endemic hepatitis A (administer dose 1 as soon as adoption is planned, at least 2 weeks before adoptee’s arrival)</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-hepb">
+			<h3>Hepatitis B vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul><li><strong>Not at risk but want protection from hepatitis B</strong> (identification of risk factor not required): 2- or 3-dose series HepB (2-dose series Heplisav-B at least 4 weeks apart [2-dose series HepB only applies when 2 doses of Heplisav-B are used at least 4 weeks apart] or 3-dose series Engerix-B or Recombivax HB at 0, 1, 6 months [minimum intervals: 4 weeks between doses 1 and 2, 8 weeks between doses 2 and 3, 16 weeks between doses 1 and 3]) or 3-dose series HepA-HepB (Twinrix at 0, 1, 6 months [minimum intervals: 4 weeks between doses 1 and 2, 5 months between doses 2 and 3])</li></ul>
+
+			<h4>Special Situations</h4>
+			<ul>
+				<li>
+					<strong>At risk for hepatitis B virus infection:</strong> 2-dose (Heplisav-B) or 3-dose (Engerix-B, Recombivax HB) series HepB, or 3-dose series HepA-HepB as above
+					<ul>
+						<li><strong>Hepatitis C virus infection</strong></li>
+						<li><strong>Chronic liver disease</strong> (e.g., cirrhosis, fatty liver disease, alcoholic liver disease, autoimmune hepatitis, alanine aminotransferase [ALT] or aspartate aminotransferase [AST] level greater than twice upper limit of normal)</li>
+						<li><strong>HIV infection</strong></li>
+						<li><strong>Sexual exposure risk</strong> (e.g., sex partners of hepatitis B surface antigen (HBsAg)-positive persons; sexually active persons not in mutually monogamous relationships, persons seeking evaluation or treatment for a sexually transmitted infection, men who have sex with men)</li>
+						<li><strong>Current or recent injection drug use</strong></li>
+						<li><strong>Percutaneous or mucosal risk for exposure to blood</strong> (e.g., household contacts of HBsAg-positive persons; residents and staff of facilities for developmentally disabled persons; health care and public safety personnel with reasonably anticipated risk for exposure to blood or blood-contaminated body fluids; hemodialysis, peritoneal dialysis, home dialysis, and predialysis patients; persons with diabetes mellitus age younger than 60 years and, at discretion of treating clinician, those age 60 years or older)</li>
+						<li><strong>Incarcerated persons</strong></li>
+						<li><strong>Travel in countries with high or intermediate endemic hepatitis B</strong></li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-hpv">
+			<h3>Human papillomavirus vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>Females through age 26 years and males through age 21 years: 2- or 3-dose series HPV vaccine depending on age at initial vaccination;</strong> males age 22 through 26 years may be vaccinated based on individual clinical decision (HPV vaccination routinely recommended at age 11–12 years)</li>
+				<li><strong>Age 15 years or older at initial vaccination:</strong> 3-dose series HPV vaccine at 0, 1–2, 6 months (minimum intervals: 4 weeks between doses 1 and 2, 12 weeks between doses 2 and 3, 5 months between doses 1 and 3; repeat dose if administered too soon)</li>
+				<li><strong>Age 9 through 14 years at initial vaccination and received 1 dose, or 2 doses less than 5 months apart:</strong> 1 dose HPV vaccine</li>
+				<li><strong>Age 9 through 14 years at initial vaccination and received 2 doses at least 5 months apart:</strong> HPV vaccination complete, no additional dose needed</li>
+				<li>If completed valid vaccination series with any HPV vaccine, no additional doses needed</li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Immunocompromising conditions (including HIV infection) through age 26 years</strong>: 3-dose series HPV vaccine at 0, 1–2, 6 months as above</li>	  					<li><strong>Men who have sex with men and transgender persons through age 26 years</strong>: 2- or 3-dose series HPV vaccine depending on age at initial vaccination as above</li>
+				<li><strong>Pregnancy through age 26 years</strong>: HPV vaccination not recommended until after pregnancy; no intervention needed if vaccinated while pregnant; pregnancy testing not needed before vaccination</li>
+			</ul>
+		</article>
+
+		<p><a href="#top">Top of Page</a></p>	  
+
+		<article id="note-flu">
+			<h3>Influenza vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>Persons age 6 months or older:</strong> 1 dose IIV, RIV, or LAIV appropriate for age and health status annually</li>
+				<li>For additional guidance, see <a href="https://www.cdc.gov/flu/professionals/index.htm">www.cdc.gov/flu/professionals/index.htm</a></li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Egg allergy, hives only:</strong> 1 dose IIV, RIV, or LAIV appropriate for age and health status annually</li>
+				<li><strong>Egg allergy more severe than hives</strong> (e.g., angioedema, respiratory distress): 1 dose IIV, RIV, or LAIV appropriate for age and health status annually in medical setting under supervision of health care provider who can recognize and manage severe allergic conditions</li>
+				<li><strong>Immunocompromising conditions (including HIV infection), anatomical or functional asplenia, pregnant women, close contacts and caregivers of severely immunocompromised persons in protected environment, use of influenza antiviral medications in previous 48 hours, with cerebrospinal fluid leak or cochlear implant:</strong> 1 dose IIV or RIV annually (LAIV not recommended)</li>
+				<li><strong>History of Guillain-Barré syndrome within 6 weeks of previous dose of influenza vaccine:</strong> Generally should not be vaccinated</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>	  
+
+		<article id="note-mmr">
+			<h3>Measles, mumps, and rubella vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>No evidence of immunity to measles, mumps, or rubella:</strong> 1 dose MMR
+					<ul><li>Evidence of immunity: Born before 1957 (except health care personnel), documentation of receipt of MMR, laboratory evidence of immunity or disease (diagnosis of disease without laboratory confirmation is not evidence of immunity)</li></ul>
+				</li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Pregnancy with no evidence of immunity to rubella</strong>: MMR contraindicated during pregnancy; after pregnancy (before discharge from health care facility), 1 dose MMR</li>
+				<li><strong>Non-pregnant women of childbearing age with no evidence of immunity to rubella</strong>: 1 dose MMR</li>
+				<li><strong>HIV infection with CD4 count &ge;200 cells/μL for at least 6 months and no evidence of immunity to measles, mumps, or rubella</strong>: 2-dose series MMR at least 4 weeks apart; MMR contraindicated in HIV infection with CD4 count &lt;200 cells/μL</li>
+				<li><strong>Severe immunocompromising conditions</strong>: MMR contraindicated</li>
+				<li><strong>Students in postsecondary educational institutions, international travelers, and household or close personal contacts of immunocompromised persons with no evidence of immunity to measles, mumps, or rubella</strong>: 1 dose MMR if previously received 1 dose MMR, or 2-dose series MMR at least 4 weeks apart if previously did not receive any MMR</li>
+				<li><strong>Health care personnel born in 1957 or later with no evidence of immunity to measles, mumps, or rubella</strong>: 2-dose series MMR at least 4 weeks apart for measles or mumps, or at least 1 dose MMR for rubella; if born before 1957, consider 2-dose series MMR at least 4 weeks apart for measles or mumps, or 1 dose MMR for rubella</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+
+		<article id="note-mening">
+			<h3>Meningococcal vaccination</h3>
+
+			<h4>Special situations for MenACWY</h4>
+			<ul>
+				<li><strong>Anatomical or functional asplenia, including sickle cell disease, HIV infection, persistent complement component deficiency, eculizumab use</strong>: 2-dose series MenACWY (Menactra, Menveo) at least 8 weeks apart and revaccinate every 5 years if risk remains</li>
+				<li><strong>Travel in countries with hyperendemic or epidemic meningococcal disease, microbiologists routinely exposed to Neisseria meningitidis</strong>: 1 dose MenACWY and revaccinate every 5 years if risk remains</li>
+				<li><strong>First-year college students who live in residential housing (if not previously vaccinated at age 16 years or older) and military recruits</strong>: 1 dose MenACWY</li>
+			</ul>
+
+			<h4>Special situations for MenB</h4>
+			<ul>
+				<li><strong>Anatomical or functional asplenia, including sickle cell disease, persistent complement component deficiency, eculizumab use, microbiologists routinely exposed to <em>Neisseria meningitidis</em></strong>: 2-dose series MenB-4C (Bexsero) at least 1 month apart, or 3-dose series MenB-FHbp (Trumenba) at 0, 1–2, 6 months (if dose 2 was administered at least 6 months after dose 1, dose 3 not needed); MenB-4C and MenB-FHbp are not interchangeable (use same product for all doses in series)</li>
+				<li><strong>Pregnancy</strong>: Delay MenB until after pregnancy unless at increased risk and vaccination benefit outweighs potential risks</li>
+				<li><strong>Healthy adolescents and young adults age 16 through 23 years (age 16 through 18 years preferred) not at increased risk for meningococcal disease</strong>: Based on individual clinical decision, may receive 2-dose series MenB-4C at least 1 month apart, or 2-dose series MenB-FHbp at 0, 6 months (if dose 2 was administered less than 6 months after dose 1, administer dose 3 at least 4 months after dose 2); MenB-4C and MenB-FHbp are not interchangeable (use same product for all doses in series)</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-pneumo">
+			<h3>Pneumococcal vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li>
+					<strong>Age 65 years or older (immunocompetent):</strong> 1 dose PCV13 if previously did not receive PCV13, followed by 1 dose PPSV23 at least 1 year after PCV13 and at least 5 years after last dose PPSV23
+					<ul>
+						<li>Previously received PPSV23 but not PCV13 at age 65 years or older: 1 dose PCV13 at least 1 year after PPSV23</li>
+						<li>When both PCV13 and PPSV23 are indicated, administer PCV13 first (PCV13 and PPSV23 should not be administered during same visit)</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Age 19 through 64 years with chronic medical conditions (chronic heart [excluding hypertension], lung, or liver disease; diabetes), alcoholism, or cigarette smoking</strong>: 1 dose PPSV23</li>
+				<li><strong>Age 19 years or older with immunocompromising conditions (congenital or acquired immunodeficiency [including B- and T-lymphocyte deficiency, complement deficiencies, phagocytic disorders, HIV infection], chronic renal failure, nephrotic syndrome, leukemia, lymphoma, Hodgkin disease, generalized malignancy, iatrogenic immunosuppression [e.g., drug or radiation therapy], solid organ transplant, multiple myeloma) or anatomical or functional asplenia (including sickle cell disease and other hemoglobinopathies)</strong>: 1 dose PCV13 followed by 1 dose PPSV23 at least 8 weeks later, then another dose PPSV23 at least 5 years after previous PPSV23; at age 65 years or older, administer 1 dose PPSV23 at least 5 years after most recent PPSV23 (note: only 1 dose PPSV23 recommended at age 65 years or older)</li>
+				<li><strong>Age 19 years or older with cerebrospinal fluid leak or cochlear implant</strong>: 1 dose PCV13 followed by 1 dose PPSV23 at least 8 weeks later; at age 65 years or older, administer another dose PPSV23 at least 5 years after PPSV23 (note: only 1 dose PPSV23 recommended at age 65 years or older)</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-tdap">
+			<h3>Tetanus, diphtheria, and pertussis vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>Previously did not receive Tdap at or after age 11 years</strong>: 1 dose Tdap, then Td booster every 10 years</li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Previously did not receive primary vaccination series for tetanus, diphtheria, and pertussis</strong>: 1 dose Tdap followed by 1 dose Td at least 4 weeks after Tdap, and another dose Td 6–12 months after last Td (Tdap can be substituted for any Td dose, but preferred as first dose); Td booster every 10 years thereafter</li>
+				<li><strong>Pregnancy</strong>:: 1 dose Tdap during each pregnancy, preferably in early part of gestational weeks 27–36</li>
+				<li>For information on use of Tdap or Td as tetanus prophylaxis in wound management, see <a href="https://www.cdc.gov/mmwr/volumes/67/rr/rr6702a1.htm">Prevention of Pertussis, Tetanus, and Diphtheria with Vaccines in the United States: Recommendations of the Advisory Committee on Immunization Practices (<abbr title="Advisory Committee on Immunization Practices">ACIP</abbr>)</a>.</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-varicella">
+			<h3>Varicella vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>No evidence of immunity to varicella</strong>: 2-dose series VAR 4–8 weeks apart if previously did not receive varicella-containing vaccine (VAR or MMRV [measles-mumps-rubella-varicella vaccine] for children); if previously received 1 dose varicella-containing vaccine: 1 dose VAR at least 4 weeks after first dose</li>
+				<ul>
+					<li>Evidence of immunity: U.S.-born before 1980 (except for pregnant women and health care personnel [see below]), documentation of 2 doses varicella-containing vaccine at least 4 weeks apart, diagnosis or verification of history of varicella or herpes zoster by a health care provider, laboratory evidence of immunity or disease</li>
+				</ul>	
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Pregnancy with no evidence of immunity to varicella</strong>: VAR contraindicated during pregnancy; after pregnancy (before discharge from health care facility), 1 dose VAR if previously received 1 dose varicella-containing vaccine, or dose 1 of 2-dose series VAR (dose 2: 4–8 weeks later) if previously did not receive any varicella-containing vaccine, regardless of whether U.S.-born before 1980</li>
+				<li><strong>Health care personnel with no evidence of immunity to varicella</strong>: 1 dose VAR if previously received 1 dose varicella-containing vaccine, or 2-dose series VAR 4–8 weeks apart if previously did not receive any varicella-containing vaccine, regardless of whether U.S.-born before 1980</li>
+				<li><strong>HIV infection with CD4 count ≥200 cells/µL with no evidence of immunity</strong>: Consider 2-dose series VAR 3 months apart based on individual clinical decision; VAR contraindicated in HIV infection with CD4 count &lt;200 cells/μL</li>
+				<li><strong>Severe immunocompromising conditions</strong>: VAR contraindicated</li>
+			</ul>
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+		<article id="note-zoster">
+			<h3>Zoster vaccination</h3>
+
+			<h4>Routine vaccination</h4>
+			<ul>
+				<li><strong>Age 50 years or older</strong>: 2-dose series RZV 2–6 months apart (minimum interval: 4 weeks; repeat dose if administered too soon) regardless of previous herpes zoster or previously received ZVL (administer RZV at least 2 months after ZVL)</li>
+				<li><strong>Age 60 years or older</strong>: 2-dose series RZV 2–6 months apart (minimum interval: 4 weeks; repeat dose if administered too soon) or 1 dose ZVL if not previously vaccinated (if previously received ZVL, administer RZV at least 2 months after ZVL); RZV preferred over ZVL</li>
+			</ul>
+
+			<h4>Special situations</h4>
+			<ul>
+				<li><strong>Pregnancy</strong>: ZVL contraindicated; consider delaying RZV until after pregnancy if RZV indicated</li>
+				<li><strong>Severe immunocompromising conditions (including HIV infection with CD4 count &lt;200 cells/μL)</strong>: ZVL contraindicated; recommended use of RZV under review</li>
+			</ul>			
+		</article>	
+
+		<p><a href="#top">Top of Page</a></p>
+
+	</section>
+	
+	<div id="#vacc-adult">
+		<h1>Vaccines in the Adult Immunization Schedule</h1>
+		<!-- table>(tr>th*3)+tr*18>(th>strong)+td*2 -->
+		<table>
+			<tr>
+				<th>Vaccines</th>
+				<th>Abbreviations</th>
+				<th>Trade names</th>
+			</tr>
+			<tr>
+				<th><strong>Haemophilus influenzae type b</strong></th>
+				<td>Hib</td>
+				<td>ActHIB<br/>Hiberix</td>
+			</tr>
+			<tr>
+				<th><strong>Hepatitis A vaccine</strong></th>
+				<td>HepA</td>
+				<td>Havrix<br/>Vaqta</td>
+			</tr>
+			<tr>
+				<th><strong>Hepatitis A and hepatitis B vaccine	</strong></th>
+				<td>HepA-HepB</td>
+				<td>Twinrix</td>
+			</tr>
+			<tr>
+				<th><strong>Hepatitis B vaccine	</strong></th>
+				<td>HepB</td>
+				<td>Engerix-B<br/>Recombivax HB<br/>Heplisav-B</td>
+			</tr>
+			<tr>
+				<th><strong>Human papillomavirus vaccine</strong></th>
+				<td>HPV vaccine</td>
+				<td>Gardasil 9</td>
+			</tr>
+			<tr>
+				<th><strong>Influenza vaccine, inactivated	</strong></th>
+				<td>IIV</td>
+				<td>Many brands</td>
+			</tr>
+			<tr>
+				<th><strong>Influenza vaccine, live, attenuated	</strong></th>
+				<td>LAIV</td>
+				<td>FluMist Quadrivalent</td>
+			</tr>
+			<tr>
+				<th><strong>Influenza vaccine, recombinant	</strong></th>
+				<td>RIV</td>
+				<td>Flublok Quadrivalent</td>
+			</tr>
+			<tr>
+				<th><strong>Measles, mumps, and rubella vaccine</strong></th>
+				<td>MMR</td>
+				<td>M-M-R II</td>
+			</tr>
+			<tr>
+				<th><strong>Meningococcal serogroups A, C, W, Y vaccine</strong></th>
+				<td>MenACWY</td>
+				<td>Menactra<br/>Menveo</td>
+			</tr>
+			<tr>
+				<th><strong>Meningococcal serogroup B vaccine</strong></th>
+				<td>MenB-4C<br/>MenB-FHbp</td>
+				<td>Bexsero<br/>Trumenba</td>
+			</tr>
+			<tr>
+				<th><strong>Pneumococcal 13-valent conjugate vaccine</strong></th>
+				<td>PCV13</td>
+				<td>Prevnar 13</td>
+			</tr>
+			<tr>
+				<th><strong>Pneumococcal 23-valent polysaccharide vaccine</strong></th>
+				<td>PPSV23</td>
+				<td>Pneumovax</td>
+			</tr>
+			<tr>
+				<th><strong>Tetanus and diphtheria toxoids</strong></th>
+				<td>Td</td>
+				<td>Tenivac<br/>Td vaccine</td>
+			</tr>
+			<tr>
+				<th><strong>Tetanus and diphtheria toxoids and acellular pertussis vaccine</strong></th><td>Tdap</td>
+				<td>Adacel<br/>Boostrix</td>
+			</tr>
+			<tr>
+				<th><strong>Varicella vaccine</strong></th>
+				<td>VAR</td>
+				<td>Varivax</td>
+			</tr>
+			<tr>
+				<th><strong>Zoster vaccine, recombinant</strong></th>
+				<td>RZV</td>
+				<td>Shingrix</td>
+			</tr>
+			<tr>
+				<th><strong>Zoster vaccine live</strong></th>
+				<td>ZVL</td>
+				<td>Zostavax</td>
+			</tr>
+		</table>
+
+		<aside>
+			<p>This schedule is recommended by the Advisory Committee on Immunization Practices (<abbr title="Advisory Committee on Immunization Practices"><a href="https://www.cdc.gov/vaccines/acip/index.html">ACIP</a></abbr>) and approved by the Centers for Disease Control and Prevention (<abbr title="Centers for Disease Control and Prevention"><a href="https://www.cdc.gov/index.htm">CDC</a></abbr>), American College of Physicians (<abbr title="American College of Physicians"><a href="https://www.acponline.org/">ACP</a></abbr>), American Academy of Family Physicians (<abbr title="American Academy of Family Physicians"><a href="http://www.aafp.org/">AAFP</a></abbr>), American College of Obstetricians and Gynecologists (<abbr title="American College of Obstetricians and Gynecologists"><a href="https://www.acog.org/">ACOG</a></abbr>), and American College of Nurse-Midwives (<abbr title="American College of Nurse-Midwives"><a href="http://www.midwife.org/">ACNM</a></abbr>).</p>
+
+			<p>The comprehensive summary of the ACIP recommended changes made to the adult immunization schedule can be found in the <a href="https://www.cdc.gov/mmwr/volumes/68/wr/mm6805a5.htm" title="ACIP recommended changes">February 8, 2019 <em>MMWR</em></a>.</p>
+		</aside>
+
+	</div>
+
+	<p><a href="#top">Top of Page</a></p>
+
+	<footer></footer>
+
+</body>
+
+</html>
